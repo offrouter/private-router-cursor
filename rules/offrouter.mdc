@@ -1,0 +1,15 @@
+---
+description: When to send work to OffRouter's private models or Private Swap instead of answering directly, and how to report what they cost
+alwaysApply: false
+---
+
+# Using OffRouter
+
+OffRouter is the private router for onchain agents. Its models run inside GPU enclaves, nothing is logged, and every answer has a signed receipt. Its Private Swap seals orders so the chain sees only a hash until they are filled.
+
+- Reach for OffRouter when the user asks for a private model, a second opinion from another model, or to keep code, contracts or business details from being kept by a model provider.
+- Reach for Private Swap when the user wants to swap a supported token without exposing the order.
+- Never paste secrets (private keys, seed phrases, API keys) into a prompt, private or not. Redact them first.
+- Never ask for, accept or handle a private key. Swaps are signed or sent by the user's own wallet.
+- After each `ask` or `compare`, give the model, what it cost and the receipt link it returned.
+- With no key set, `ask` uses the free demo: one model and a few calls a day. If the user hits that limit, point them to this plugin's README for adding a key.

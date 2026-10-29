@@ -1,0 +1,25 @@
+{
+  "name": "offrouter-private-router",
+  "displayName": "OffRouter Private Router",
+  "version": "0.3.0",
+  "description": "The private router for onchain agents, in Cursor. 18 open models that run in GPU enclaves, never logged, with a signed receipt on every answer, plus private token swaps whose orders reach the chain only as a hash. Works without a key on the free demo.",
+  "author": {
+    "name": "OffRouter",
+    "url": "https://offrouter.org"
+  },
+  "homepage": "https://offrouter.org",
+  "repository": "https://github.com/offrouter/private-router-cursor",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "private-inference",
+    "tee",
+    "confidential-computing",
+    "llm",
+    "privacy",
+    "private-swap",
+    "onchain-agents",
+    "x402"
+  ],
+  "logo": "assets/logo.png"
+}

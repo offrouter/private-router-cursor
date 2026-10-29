@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "offrouter": {
+      "url": "https://offrouter.org/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:OFFROUTER_API_KEY}"
+      }
+    }
+  }
+}
